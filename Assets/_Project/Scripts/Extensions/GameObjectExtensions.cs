@@ -72,4 +72,39 @@ public static class GameObjectExtensions {
     public static void ResetTransformation(this GameObject gameObject) {
         gameObject.transform.Reset();
     }
+    
+    /// <summary>
+    /// Returns the hierarchical path in the Unity scene hierarchy for this GameObject.
+    /// </summary>
+    /// <param name="gameObject">The GameObject to get the path for.</param>
+    /// <returns>A string representing the full hierarchical path of this GameObject in the Unity scene.
+    /// This is a '/'-separated string where each part is the name of a parent, starting from the root parent and ending
+    /// with the name of the specified GameObjects parent.</returns>
+    public static string Path(this GameObject gameObject)
+    {
+        return "/" + string.Join("/", gameObject.GetComponentsInParent<Transform>().Select(t => t.name).Reverse().ToArray());
+    }
+
+    /// <summary>
+    /// Returns the full hierarchical path in the Unity scene hierarchy for this GameObject.
+    /// </summary>
+    /// <param name="gameObject">The GameObject to get the path for.</param>
+    /// <returns>A string representing the full hierarchical path of this GameObject in the Unity scene.
+    /// This is a '/'-separated string where each part is the name of a parent, starting from the root parent and ending
+    /// with the name of the specified GameObject itself.</returns>
+    public static string PathFull(this GameObject gameObject)
+    {
+        return gameObject.Path() + "/" + gameObject.name;
+    }
+
+    /// <summary>
+    /// Recursively sets the provided layer for this GameObject and all of its descendants in the Unity scene hierarchy.
+    /// </summary>
+    /// <param name="gameObject">The GameObject to set layers for.</param>
+    /// <param name="layer">The layer number to set for GameObject and all of its descendants.</param>
+    public static void SetLayersRecursively(this GameObject gameObject, int layer)
+    {
+        gameObject.layer = layer;
+        gameObject.transform.ForEveryChild(child => child.gameObject.SetLayersRecursively(layer));
+    }
 }
