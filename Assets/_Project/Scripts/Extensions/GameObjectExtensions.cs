@@ -3,6 +3,14 @@ using System.Linq;
 
 public static class GameObjectExtensions {
     /// <summary>
+    /// This method is used to hide the GameObject in the Hierarchy view.
+    /// </summary>
+    /// <param name="gameObject"></param>
+    public static void HideInHierarchy(this GameObject gameObject) {
+        gameObject.hideFlags = HideFlags.HideInHierarchy;
+    }
+    
+    /// <summary>
     /// Gets a component of the given type attached to the GameObject. If that type of component does not exist, it adds one.
     /// </summary>
     /// <remarks>
