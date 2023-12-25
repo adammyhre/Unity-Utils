@@ -3,7 +3,7 @@ using UnityEngine;
 public static class Vector2Extensions
 {
 	/// <summary>
-	/// Adds to any x y z values of a Vector2
+	/// Adds to any x y values of a Vector2
 	/// </summary>
 	public static Vector2 Add(this Vector2 vector2, float x = 0, float y = 0)
 	{
@@ -11,7 +11,7 @@ public static class Vector2Extensions
 	}
 
 	/// <summary>
-	/// Sets any x y z values of a Vector2
+	/// Sets any x y values of a Vector2
 	/// </summary>
 	public static Vector2 With(this Vector2 vector2, float? x = null, float? y = null)
 	{
