@@ -5,17 +5,9 @@ public static class Vector2Extensions
 	/// <summary>
 	/// Adds to any x y z values of a Vector2
 	/// </summary>
-	public static Vector2 Add(this Vector3 vector2, float x = 0, float y = 0)
+	public static Vector2 Add(this Vector2 vector2, float x = 0, float y = 0)
 	{
 		return new Vector2(vector2.x + x, vector2.y + y);
-	}
-
-	/// <summary>
-	/// Removes to any x y z values of a Vector2
-	/// </summary>
-	public static Vector2 Remove(this Vector2 vector2, float x = 0, float y = 0)
-	{
-		return new Vector2(vector2.x - x, vector2.y - y);
 	}
 
 	/// <summary>
@@ -33,7 +25,7 @@ public static class Vector2Extensions
 	/// <param name="target">The Vector2 position to compare against</param>
 	/// <param name="range">The range value to compare against</param>
 	/// <returns>True if the current Vector2 is in the given range from the target Vector2, false otherwise</returns>
-	public static bool InRangeOff(this Vector2 curret, Vector2 target, float range)
+	public static bool InRangeOf(this Vector2 current, Vector2 target, float range)
 	{
 		return (curret - target).sqrMagnitude <= range * range;
 	}
