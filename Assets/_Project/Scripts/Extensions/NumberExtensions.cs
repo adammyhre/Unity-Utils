@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using MathfExt = MathfExtension;
 #if ENABLED_UNITY_MATHEMATICS
 using Unity.Mathematics;
 #endif
@@ -27,17 +26,17 @@ public static class NumberExtensions
 	public static int AtLeast(this int value, int min) => Mathf.Max(value, min);
 	public static int AtMost(this int value, int max) => Mathf.Min(value, max);
 
-	public static long AtLeast(this long value, long max) => MathfExt.Max(value, max);
-	public static long AtMost(this long value, long max) => MathfExt.Min(value, max);
+	public static long AtLeast(this long value, long max) => MathfExtension.Max(value, max);
+	public static long AtMost(this long value, long max) => MathfExtension.Min(value, max);
 
 #if ENABLED_UNITY_MATHEMATICS
-	public static half AtLeast(this half value, half max) => MathfExt.Max(value, max);
-	public static half AtMost(this half value, half max) => MathfExt.Min(value, max);
+	public static half AtLeast(this half value, half max) => MathfExtension.Max(value, max);
+	public static half AtMost(this half value, half max) => MathfExtension.Min(value, max);
 #endif
 
 	public static float AtLeast(this float value, float min) => Mathf.Max(value, min);
 	public static float AtMost(this float value, float max) => Mathf.Min(value, max);
 
-	public static double AtLeast(this double value, double min) => MathfExt.Max(value, min);
-	public static double AtMost(this double value, double min) => MathfExt.Min(value, min);
+	public static double AtLeast(this double value, double min) => MathfExtension.Max(value, min);
+	public static double AtMost(this double value, double min) => MathfExtension.Min(value, min);
 }

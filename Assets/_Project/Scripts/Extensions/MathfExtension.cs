@@ -1,4 +1,6 @@
-﻿using Unity.Mathematics;
+﻿#if ENABLED_UNITY_MATHEMATICS
+using Unity.Mathematics;
+#endif
 
 public struct MathfExtension
 {
@@ -40,6 +42,7 @@ public struct MathfExtension
 			return num2;
 		}
 
+	#if ENABLED_UNITY_MATHEMATICS
 		/// <summary>
 		/// Returns the smallest of two or more values.
 		/// </summary>
@@ -76,6 +79,7 @@ public struct MathfExtension
 
 			return num2;
 		}
+	#endif
 
 		/// <summary>
 		/// Returns the smallest of two or more values.
@@ -115,11 +119,23 @@ public struct MathfExtension
 		}
 	#endregion
 	#region Max
-	public static long Max(long a, long b)
+		/// <summary>
+		/// Returns the largest of two or more values.
+		/// </summary>
+		/// <param name="a"></param>
+		/// <param name="b"></param>
+		/// <returns></returns>
+		public static long Max(long a, long b)
 		{
 			return (a > b) ? a : b;
 		}
 
+		/// <summary>
+		/// Returns the largest of two or more values.
+		/// </summary>
+		/// <param name="a"></param>
+		/// <param name="b"></param>
+		/// <returns></returns>
 		public static long Max(params long[] values)
 		{
 			int num = values.Length;
@@ -140,6 +156,7 @@ public struct MathfExtension
 			return num2;
 		}
 
+	#if ENABLED_UNITY_MATHEMATICS
 		/// <summary>
 		/// Returns the largest of two or more values.
 		/// </summary>
@@ -176,6 +193,7 @@ public struct MathfExtension
 
 			return num2;
 		}
+	#endif
 
 		/// <summary>
 		/// Returns the largest of two or more values.
