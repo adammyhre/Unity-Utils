@@ -14,6 +14,9 @@ Simply download the library into your Unity project and access the utilities acr
 ```
 https://github.com/adammyhre/Unity-Utils.git
 ```
+## How to Contribute
+
+Create new empty project in Unity, fork this repository and clone it to your project Assets folder.
 
 ## YouTube
 
