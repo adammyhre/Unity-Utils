@@ -1,0 +1,19 @@
+{
+  "name": "com.gitamend.unityutils",
+  "displayName": "Unity Utility Library",
+  "description": "Unity Utility Library, a growing collection of handy extension methods, helpers, attributes, and other utilities designed to enhance and simplify your Unity development workflow. Whether you're a seasoned developer or just starting, this library aims to provide tools that will help streamline your coding process and add efficiency to your projects.",
+  "version": "1.0.0",
+  "keywords": [
+    "extension",
+    "attribute",
+    "inspector",
+    "editor"
+  ],
+  "category": "editor extensions",
+  "dependencies": {},
+  "author": {
+    "name": "Adam Myhre",
+    "url": "https://github.com/adammyhre"
+  },
+  "documentationUrl": "https://github.com/adammyhre/Unity-Utils/blob/master/README.md"
+}
