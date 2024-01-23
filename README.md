@@ -7,6 +7,8 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 ## Features
 
 - **Extension Methods:** Extend Unity and C# built-in types with additional functionalities.
+- **Singletons:** Generic Singletons for various use cases.
+- **Helpers:** Static helper methods such as NonAlloc WaitForSeconds.
 
 ## Dependencies
 
@@ -24,11 +26,11 @@ Add the following line to the dependencies section of your project's manifest.js
 
 ```
 "com.gitamend.unityutils": "https://github.com/adammyhre/Unity-Utils.git"
-
 ```
 
 ## YouTube
 
-[**Extension Methods Video**](https://youtu.be/Nk49EUf7yyU)
+[**Extension Methods Video**](https://youtu.be/Nk49EUf7yyU)  
+[**Singleton Video**](https://youtu.be/LFOXge7Ak3E)
 
 You can also check out my [YouTube channel](https://www.youtube.com/@git-amend?sub_confirmation=1) for more Unity content.
