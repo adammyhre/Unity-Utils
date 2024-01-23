@@ -1,5 +1,5 @@
 {
-    "name": "Utility.Extensions",
+    "name": "UnityUtils",
     "rootNamespace": "UnityUtils",
     "references": [
         "GUID:df380645f10b7bc4b97d4f5eb6303d95",

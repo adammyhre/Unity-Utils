@@ -10,7 +10,18 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 
 ## How to Use
 
-Simply import the library into your Unity project and access the utilities across your scripts.
+Simply download the library into your Unity project and access the utilities across your scripts or import it in Unity with package manager using this URL:
+
+`https://github.com/adammyhre/Unity-Utils.git`
+
+### With Git URL
+
+Add the following line to the dependencies section of your project's manifest.json file.
+
+```
+"com.gitamend.unityutils": "https://github.com/adammyhre/Unity-Utils.git"
+
+```
 
 ## YouTube
 
