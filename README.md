@@ -8,6 +8,10 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 
 - **Extension Methods:** Extend Unity and C# built-in types with additional functionalities.
 
+## Dependencies
+
+The package requires the Core RP Library due to the LoadVolumeProfile() extension.
+
 ## How to Use
 
 Simply download the library into your Unity project and access the utilities across your scripts or import it in Unity with package manager using this URL:
