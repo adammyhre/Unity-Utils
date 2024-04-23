@@ -10,8 +10,8 @@ public static class StringExtensions {
     /// <summary>Checks if a string contains null, empty or white space.</summary>
     public static bool IsBlank(this string val) => val.IsNullOrWhiteSpace() || val.IsNullOrEmpty();
 
-    /// <summary>Returns an empty string if the string is null or empty or white space.</summary>
-    public static string OrEmpty(this string val) => val.IsBlank() ? string.Empty : val;
+    /// <summary>Checks if a string is null and returns an empty string if it is.</summary>
+    public static string OrEmpty(this string val) => val ?? string.Empty;
 
     /// <summary>
     /// Shortens a string to the specified maximum length. If the string's length
