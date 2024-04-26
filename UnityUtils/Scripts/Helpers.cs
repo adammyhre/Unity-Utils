@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Reflection;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 namespace UnityUtils {
     public static class Helpers {
@@ -22,6 +24,16 @@ namespace UnityUtils {
         class FloatComparer : IEqualityComparer<float> {
             public bool Equals(float x, float y) => Mathf.Abs(x - y) <= Mathf.Epsilon;
             public int GetHashCode(float obj) => obj.GetHashCode();
+        }
+
+        /// <summary>
+        /// Clears the console log in the Unity Editor.
+        /// </summary
+        public static void ClearConsole() {
+            var assembly = Assembly.GetAssembly(typeof(SceneView));
+            var type = assembly.GetType("UnityEditor.LogEntries");
+            var method = type.GetMethod("Clear");
+            method?.Invoke(new object(), null);
         }
     }
 }
