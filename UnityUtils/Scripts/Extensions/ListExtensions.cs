@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace UnityUtils {
     public static class ListExtensions {
+        static Random rng;
+        
         /// <summary>
         /// Determines whether a collection is null or has no elements
         /// without having to enumerate the entire collection to get a count.
@@ -38,5 +41,22 @@ namespace UnityUtils {
         public static void Swap<T>(this IList<T> list, int indexA, int indexB) {
             (list[indexA], list[indexB]) = (list[indexB], list[indexA]);
         }
+
+        /// <summary>
+        /// Shuffles the elements in the list using the Fisher-Yates algorithm.
+        /// This method modifies the input list in-place.
+        /// http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
+        /// </summary>
+        /// <param name="list">The list to be shuffled.</param>
+        /// <typeparam name="T">The type of the elements in the list.</typeparam>
+        public static void Shuffle<T>(this IList<T> list) {
+            if (rng == null) rng = new Random();
+            int count = list.Count;
+            while (count > 1) {
+                --count;
+                int index = rng.Next(count + 1);
+                (list[index], list[count]) = (list[count], list[index]);
+            }
+        }        
     }
 }
