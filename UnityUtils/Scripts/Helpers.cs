@@ -14,11 +14,12 @@ namespace UnityUtils {
         public static WaitForSeconds GetWaitForSeconds(float seconds) {
             if (seconds < 1f / Application.targetFrameRate) return null;
 
-            if (WaitForSecondsDict.TryGetValue(seconds, out var forSeconds)) return forSeconds;
+            if (!WaitForSecondsDict.TryGetValue(seconds, out var forSeconds)) {
+                forSeconds = new WaitForSeconds(seconds);
+                WaitForSecondsDict[seconds] = forSeconds;
+            }
 
-            var waitForSeconds = new WaitForSeconds(seconds);
-            WaitForSecondsDict[seconds] = waitForSeconds;
-            return waitForSeconds;
+            return forSeconds;
         }
 
         class FloatComparer : IEqualityComparer<float> {
