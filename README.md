@@ -7,6 +7,7 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 ## Features
 
 - **Extension Methods:** Extend Unity and C# built-in types with additional functionalities.
+- **Conversion Extension Methods** Convert Vectors and Quaternions between System.Numerics and Unity.
 - **Singletons:** Generic Singletons for various use cases.
 - **Helpers:** Static helper methods such as NonAlloc WaitForSeconds.
 
