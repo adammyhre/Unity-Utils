@@ -1,3 +1,12 @@
+## [1.0.2] - 2024-07-21
+### Add Hotkeys and Helpers
+- Add WaitFor static class
+- Add hotkeys:
+    - Save Scene + Project
+    - Close Window
+    - Compile Project
+    - Lock Inspector and Constrain Proportions
+
 ## [1.0.1] - 2024-06-24
 ### Add Conversion Methods
 - Added conversion methods between `UnityEngine` and `System.Numerics` vectors and quaternions.
