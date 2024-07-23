@@ -1,3 +1,9 @@
+## [1.0.3] - 2024-07-29
+### Add License and Code Cleanup
+- Add License
+- Migrate WaitForSeconds method to WaitFor class
+- Update Readme
+
 ## [1.0.2] - 2024-07-21
 ### Add Hotkeys and Helpers
 - Add WaitFor static class
