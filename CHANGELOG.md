@@ -1,3 +1,9 @@
+## [1.0.4] - 2024-09-01
+### Add UI Toolkit Extensions
+- Add UI Toolkit extensions:
+    - `VisualElement` extensions
+    - `UQueryBuilder` extensions
+
 ## [1.0.3] - 2024-07-29
 ### Add License and Code Cleanup
 - Add License
