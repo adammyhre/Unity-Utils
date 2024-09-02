@@ -70,47 +70,15 @@ namespace UnityUtils {
         }
         
         /// <summary>
-        /// Sets the background image of a VisualElement using a Sprite.
-        /// This method internally calls <see cref="SpriteToTexture"/> to convert the Sprite to a Texture2D.
+        /// Sets the background image of a VisualElement using a given Sprite.
         /// </summary>
-        /// <param name="imageContainer">The VisualElement to set the background image for.</param>
+        /// <param name="imageContainer">The VisualElement whose background image will be set.</param>
         /// <param name="sprite">The Sprite to use as the background image.</param>
-        public static void SetImage(this VisualElement imageContainer, Sprite sprite) {
-            var texture = SpriteToTexture(sprite);
+        public static void SetImageFromSprite(this VisualElement imageContainer, Sprite sprite) {
+            var texture = sprite.texture;
             if (texture) {
                 imageContainer.style.backgroundImage = new StyleBackground(texture);
             }
-        }
-        
-        /// <summary>
-        /// Converts a Sprite to a Texture2D. If the sprite's dimensions exceed the texture bounds, 
-        /// it resizes the texture to fit within the bounds and extracts the pixel data accordingly.
-        /// </summary>
-        /// <param name="sprite">The Sprite to convert to a Texture2D.</param>
-        /// <returns>A Texture2D created from the Sprite's pixel data, or null if the sprite is null.</returns>
-        static Texture2D SpriteToTexture(Sprite sprite) {
-            if (!sprite) return null;
-
-            // Get the sprite's dimensions and texture data
-            var width = (int)sprite.rect.width;
-            var height = (int)sprite.rect.height;
-            
-            int textureWidth  = sprite.texture.width;
-            int textureHeight = sprite.texture.height;
-            var textureRectX  = (int)sprite.textureRect.x;
-            var textureRectY  = (int)sprite.textureRect.y;
-            
-            // Clamp the dimensions to the texture bounds
-            int clampedWidth = Mathf.Min(width, textureWidth - textureRectX);
-            int clampedHeight = Mathf.Min(height, textureHeight - textureRectY);
-            
-            // Extract the pixel data from the sprite's texture
-            var texture = new Texture2D(clampedWidth, clampedHeight, TextureFormat.RGBA32, false);
-            Color[] pixels = sprite.texture.GetPixels(textureRectX, textureRectY, clampedWidth, clampedHeight);
-            texture.SetPixels(pixels);
-            texture.Apply();
-
-            return texture;
         }
     }
 }
