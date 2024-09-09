@@ -1,3 +1,10 @@
+## [1.0.5] - 2024-09-04
+### Add More UI Toolkit Extensions
+- Added ConvertToAlphaNumeric method in:
+  - `VisualElement` extensions
+- Add more extensions classes:
+  - `Color` extensions
+
 ## [1.0.4] - 2024-09-01
 ### Add UI Toolkit Extensions
 - Add UI Toolkit extensions:
