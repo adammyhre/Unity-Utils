@@ -1,4 +1,5 @@
 ﻿# Unity Utility Library
+![Unity](https://img.shields.io/badge/Unity-v2022.3%2B-blue) ![License](https://img.shields.io/github/license/adammyhre/Unity-Utils) ![Stars](https://img.shields.io/github/stars/adammyhre/Unity-Utils)
 
 ![image](https://github.com/adammyhre/Unity-Utils/assets/38876398/9873f81a-759f-40a2-87be-50baad25301a)
 
