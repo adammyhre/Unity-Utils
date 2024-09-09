@@ -1,7 +1,13 @@
+## [1.0.6] - 2024-09-08
+### Add RichText Extensions
+- Added more extensions methods in:
+- `String` extensions
+  - `RichText` extensions
+
 ## [1.0.5] - 2024-09-04
 ### Add More UI Toolkit Extensions
 - Added ConvertToAlphaNumeric method in:
-  - `VisualElement` extensions
+  - `String` extensions
 - Add more extensions classes:
   - `Color` extensions
 
