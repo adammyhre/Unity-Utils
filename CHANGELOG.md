@@ -1,3 +1,8 @@
+## [1.0.5] - 2024-09-08
+### Add RichText Extensions
+- Added RichText extensions:
+  - `RichText` extensions
+
 ## [1.0.4] - 2024-09-01
 ### Add UI Toolkit Extensions
 - Add UI Toolkit extensions:
