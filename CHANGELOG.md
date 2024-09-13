@@ -1,3 +1,8 @@
+## [1.0.7] - 2024-09-12
+- Added `VisualElement` extensions:
+- `RemoveFrom` extension method to remove a child `VisualElement` from a parent.
+- `RemoveClass` extension method to remove CSS classes from a `VisualElement`.
+
 ## [1.0.6] - 2024-09-08
 ### Add RichText Extensions
 - Added more extensions methods in:
