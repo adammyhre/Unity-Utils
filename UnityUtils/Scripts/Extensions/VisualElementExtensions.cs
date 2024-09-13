@@ -40,6 +40,12 @@ namespace UnityUtils {
             parent.Add(child);
             return child;
         }
+        
+        /// <remarks>
+        /// See <see cref="AddTo{T}(T, VisualElement)"/> for adding a child to a parent.
+        /// </remarks>
+        public static void RemoveFrom<T>(this T child, VisualElement parent)
+            where T : VisualElement => parent.Remove(child);
 
         /// <summary>
         /// Adds the specified CSS classes to the VisualElement.
@@ -55,6 +61,17 @@ namespace UnityUtils {
                 }
             }
             return visualElement;
+        }
+        
+        /// <remarks>
+        /// See <see cref="AddClass{T}(T, string[])"/> for adding classes.
+        /// </remarks>
+        public static void RemoveClass<T>(this T visualElement, params string[] classes) where T : VisualElement {
+            foreach (string cls in classes) {
+                if (!string.IsNullOrEmpty(cls)) {
+                    visualElement.RemoveFromClassList(cls);
+                }
+            }
         }
 
         /// <summary>
