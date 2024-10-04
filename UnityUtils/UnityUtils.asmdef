@@ -17,6 +17,11 @@
             "name": "com.unity.mathematics",
             "expression": "1",
             "define": "ENABLED_UNITY_MATHEMATICS"
+        },
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "1",
+            "define": "ENABLED_UNITY_URP"
         }
     ],
     "noEngineReferences": false
