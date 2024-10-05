@@ -1,3 +1,7 @@
+## [1.0.8] - 2024-10-04
+- Added Version Define for URP Enabled
+- The Define Tag is marked "ENABLED_UNITY_URP"
+
 ## [1.0.7] - 2024-09-12
 - Added `VisualElement` extensions:
 - `RemoveFrom` extension method to remove a child `VisualElement` from a parent.
