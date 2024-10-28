@@ -1,15 +1,21 @@
+## [1.1.0] - 2024-10-28
+- Added `Editor` Extensions:
+  - Added `ConfirmOverwrite` to check if a file exists and prompt for confirmation to overwrite it.
+  - Added `BrowseForFolder` to open a folder browser dialog and return the selected folder path.
+  - Added `PingAndSelect` to ping and select a specified asset in the Unity Editor.
+
 ## [1.0.9] - 2024-10-27
 - Added `Reflection` Extensions:
-  - Added methods to determine if a type or field is a delegate.
-  - Added methods to check if a type is a generic type of given non-generic type.
-  - Added methods to check if a type is a derived type of given base type.
-  - Added methods to check if a type can be cast to another type.
-  - Added methods to dynamically cast an object to a specified type.
-  - Added methods to check if a method is an override.
-  - Added methods to check if an attribute is present on a provider.
-  - Added methods to get a formatted display name for a given type.
-  - Added methods to check if two methods from different types have the same signature.
-  - Added methods to rebase a method onto a new type by finding the corresponding method with an equal signature.
+  - Added `IsDelegate` to determine if a type or field is a delegate.
+  - Added `IsGenericTypeOf` to check if a type is a generic type of given non-generic type.
+  - Added `IsDerivedTypeOf` to check if a type is a derived type of given base type.
+  - Added `IsCastableTo` to check if a type can be cast to another type.
+  - Added `Cast` to dynamically cast an object to a specified type.
+  - Added `IsOverride` to check if a method is an override.
+  - Added `HasAttribute` to check if an attribute is present on a provider.
+  - Added `GetDisplayName` to get a formatted display name for a given type.
+  - Added `AreMethodsEqual` to check if two methods from different types have the same signature.
+  - Added `RebaseMethod` to rebase a method onto a new type by finding the corresponding method with an equal signature.
 
 ## [1.0.8] - 2024-10-04
 - Added Version Define for URP Enabled
