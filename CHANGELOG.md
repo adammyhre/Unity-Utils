@@ -1,3 +1,9 @@
+## [1.1.1] - 2024-10-28
+- Added `DateTime` Extensions:
+  - Added `ChangeYear` to change the year of a `DateTime`.
+  - Added `ChangeMonth` to change the month of a `DateTime`.
+  - Added `ChangeDay` to change the day of a `DateTime`.
+
 ## [1.1.0] - 2024-10-28
 - Added `Editor` Extensions:
   - Added `ConfirmOverwrite` to check if a file exists and prompt for confirmation to overwrite it.
