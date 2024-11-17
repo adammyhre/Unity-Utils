@@ -14,5 +14,26 @@ namespace UnityUtils {
                 action(item);
             }
         }
+
+
+        /// <summary>
+        /// Returns a random element from the sequence.
+        /// </summary>
+        /// <typeparam name="T">The type of elements in the sequence.</typeparam>
+        /// <param name="sequence">The sequence to select the random element from.</param>
+        /// <returns>A random element from the sequence.</returns>
+        public static T Random<T>(this IEnumerable<T> sequence)
+        {
+            if (sequence == null)
+                throw new ArgumentNullException(nameof(sequence));
+
+            var list = sequence as IList<T> ?? new List<T>(sequence);
+
+            if (list.Count == 0)
+                throw new InvalidOperationException("Cannot get a random element from an empty collection.");
+
+            int index = UnityEngine.Random.Range(0, list.Count);
+            return list[index];
+        }
     }
 }
