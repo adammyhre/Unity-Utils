@@ -1,8 +1,11 @@
-## [1.1.1] - 2024-10-29
+## [1.0.12] - 2024-11-19
+- Added Random for Enumerables
+
+## [1.0.11] - 2024-10-29
 - Added `DateTime` Extensions:
   - Added `WithDate` to set or change the date of a `DateTime` object.
 
-## [1.1.0] - 2024-10-28
+## [1.0.10] - 2024-10-28
 - Added `Editor` Extensions:
   - Added `ConfirmOverwrite` to check if a file exists and prompt for confirmation to overwrite it.
   - Added `BrowseForFolder` to open a folder browser dialog and return the selected folder path.
