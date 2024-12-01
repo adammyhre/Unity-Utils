@@ -45,6 +45,25 @@ namespace UnityUtils {
         };
 
         /// <summary>
+        /// Returns the default value for the given type.
+        /// </summary>
+        /// <param name="type">The type for which to get the default value.</param>
+        /// <returns>An instance of the type with default value, or null if the type is a reference type.</returns>
+        public static object Default(this Type type) {
+            return type.IsValueType ? Activator.CreateInstance(type) : null;
+        }
+
+        /// <summary>
+        /// Determines if a type is assignable from the specified generic type parameter.
+        /// </summary>
+        /// <typeparam name="T">The type to check against.</typeparam>
+        /// <param name="type">The type to check.</param>
+        /// <returns>True if the specified type is assignable from the generic type parameter T, otherwise false.</returns>
+        public static bool Is<T>(this Type type) {
+            return typeof(T).IsAssignableFrom(type);
+        }
+
+        /// <summary>
         /// Determines if a type is a delegate.
         /// </summary>
         /// <param name="type">The type to check.</param>

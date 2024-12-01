@@ -1,3 +1,6 @@
+## [1.0.13] - 2024-12-01
+- Add more `Task` and `Reflection` Extension methods.
+
 ## [1.0.12] - 2024-11-19
 - Added Random for Enumerables
 

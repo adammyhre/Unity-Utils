@@ -5,6 +5,14 @@ using System.Threading.Tasks;
 namespace UnityUtils {
     public static class TaskExtensions {
         /// <summary>
+        /// Wraps the provided object into a completed Task.
+        /// </summary>
+        /// <param name="obj">The object to be wrapped in a Task.</param>
+        /// <typeparam name="T">The type of the object.</typeparam>
+        /// <returns>A completed Task containing the object.</returns>
+        public static Task<T> AsCompletedTask<T>(this T obj) => Task.FromResult(obj);
+        
+        /// <summary>
         /// Converts the Task into an IEnumerator for Unity coroutine usage.
         /// </summary>
         /// <param name="task">The Task to convert.</param>
