@@ -1,3 +1,6 @@
+## [1.0.14] - 2024-12-22
+- Add Filter extension method for IList
+
 ## [1.0.13] - 2024-12-01
 - Add more `Task` and `Reflection` Extension methods.
 
