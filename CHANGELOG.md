@@ -1,3 +1,6 @@
+## [1.0.15] - 2024-12-24
+- Changne Default Hotkey for Compile Project to F5
+
 ## [1.0.14] - 2024-12-22
 - Add Filter extension method for IList
 
