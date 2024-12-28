@@ -18,7 +18,7 @@ namespace UnityUtils {
             { typeof(uint), "uint" },
             { typeof(short), "short" },
             { typeof(ushort), "ushort" },
-            { typeof(long), "decimal" },
+            { typeof(long), "long" },
             { typeof(ulong), "ulong" },
             { typeof(char), "char" },
             { typeof(object), "object" }
