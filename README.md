@@ -10,6 +10,7 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 - **Conversion Extension Methods:** Convert Vectors and Quaternions between System.Numerics and UnityEngine.
 - **Hotkeys:** Lock Inspector, Close Tab, Compile Project and more.
 - **Helpers:** Static helper methods such as NonAlloc WaitForSeconds.
+- **Vector Math:** Vector math utilities such as RotateVectorOntoPlane.
 - **Singletons:** Generic Singletons for various use cases.
 
 ## Dependencies

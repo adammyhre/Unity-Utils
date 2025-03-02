@@ -1,5 +1,16 @@
+## [1.0.16] - 2025-03-02
+- Added `VectorMath` Class to the Library
+  - `GetAngle`: Computes the signed angle between two vectors on a specified plane.
+  - `GetDotProduct`: Calculates the dot product of a vector and a normalized direction vector.
+  - `RemoveDotVector`: Removes the vector component in a specified direction, effectively "filtering out" the direction from the original vector.
+  - `ExtractDotVector`: Extracts the vector component aligned with a specified direction.
+  - `RotateVectorOntoPlane`: Rotates a vector onto a plane defined by a plane’s normal and an up direction.
+  - `ProjectPointOntoLine`: Projects a point onto a line defined by a starting position and direction.
+  - `IncrementVectorTowardTargetVector`: Moves a vector incrementally toward a target vector at a given speed over a time interval.
+- Added `Vector3.RandomOffset`
+
 ## [1.0.15] - 2024-12-24
-- Changne Default Hotkey for Compile Project to F5
+- Change Default Hotkey for Compile Project to F5
 
 ## [1.0.14] - 2024-12-22
 - Add Filter extension method for IList
