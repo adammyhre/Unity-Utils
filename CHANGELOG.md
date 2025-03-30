@@ -1,10 +1,15 @@
+## [1.0.17] - 2025-03-30
+- Added `RigidbodyExtensions` Class to the Library
+  - `ChangeDirection`: Changes the direction of the Rigidbody's velocity while maintaining its speed.
+  - `Stop`: Stops the Rigidbody by setting its linear and angular velocities to zero.
+
 ## [1.0.16] - 2025-03-02
 - Added `VectorMath` Class to the Library
   - `GetAngle`: Computes the signed angle between two vectors on a specified plane.
   - `GetDotProduct`: Calculates the dot product of a vector and a normalized direction vector.
   - `RemoveDotVector`: Removes the vector component in a specified direction, effectively "filtering out" the direction from the original vector.
   - `ExtractDotVector`: Extracts the vector component aligned with a specified direction.
-  - `RotateVectorOntoPlane`: Rotates a vector onto a plane defined by a plane’s normal and an up direction.
+  - `RotateVectorOntoPlane`: Rotates a vector onto a plane defined by a plane's normal and an up direction.
   - `ProjectPointOntoLine`: Projects a point onto a line defined by a starting position and direction.
   - `IncrementVectorTowardTargetVector`: Moves a vector incrementally toward a target vector at a given speed over a time interval.
 - Added `Vector3.RandomOffset`
