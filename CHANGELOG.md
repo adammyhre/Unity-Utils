@@ -1,3 +1,6 @@
+## [1.0.18] - 2025-04-19
+- Added `SetActive` and `SetInactive` methods to `GameObjectExtensions` class.
+
 ## [1.0.17] - 2025-03-30
 - Added `RigidbodyExtensions` Class to the Library
   - `ChangeDirection`: Changes the direction of the Rigidbody's velocity while maintaining its speed.

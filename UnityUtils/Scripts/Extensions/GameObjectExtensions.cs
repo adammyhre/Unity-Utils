@@ -115,5 +115,27 @@ namespace UnityUtils {
             gameObject.layer = layer;
             gameObject.transform.ForEveryChild(child => child.gameObject.SetLayersRecursively(layer));
         }
+        
+        /// <summary>
+        /// Activates the GameObject associated with the MonoBehaviour and returns the instance.
+        /// </summary>
+        /// <typeparam name="T">The type of the MonoBehaviour.</typeparam>
+        /// <param name="obj">The MonoBehaviour whose GameObject will be activated.</param>
+        /// <returns>The instance of the MonoBehaviour.</returns>
+        public static T SetActive<T>(this T obj) where T : MonoBehaviour {
+            obj.gameObject.SetActive(true);
+            return obj;
+        }
+
+        /// <summary>
+        /// Deactivates the GameObject associated with the MonoBehaviour and returns the instance.
+        /// </summary>
+        /// <typeparam name="T">The type of the MonoBehaviour.</typeparam>
+        /// <param name="obj">The MonoBehaviour whose GameObject will be deactivated.</param>
+        /// <returns>The instance of the MonoBehaviour.</returns>
+        public static T SetInactive<T>(this T obj) where T : MonoBehaviour {
+            obj.gameObject.SetActive(false);
+            return obj;
+        }
     }
 }
