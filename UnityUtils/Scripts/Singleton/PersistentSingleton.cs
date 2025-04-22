@@ -7,7 +7,6 @@ namespace UnityUtils {
         protected static T instance;
 
         public static bool HasInstance => instance != null;
-        public static T TryGetInstance() => HasInstance ? instance : null;
 
         public static T Instance {
             get {
@@ -33,13 +32,12 @@ namespace UnityUtils {
         protected virtual void InitializeSingleton() {
             if (!Application.isPlaying) return;
 
-            if (AutoUnparentOnAwake) {
-                transform.SetParent(null);
-            }
-
             if (instance == null) {
                 instance = this as T;
                 DontDestroyOnLoad(gameObject);
+                if (AutoUnparentOnAwake) {
+                    transform.SetParent(null);
+                }
             } else {
                 if (instance != this) {
                     Destroy(gameObject);
