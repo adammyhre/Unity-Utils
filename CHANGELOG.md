@@ -1,3 +1,6 @@
+## [1.0.19] - 2025-05-10
+- Added PropertyPathExtensions for use with Unity.Properties API
+
 ## [1.0.18] - 2025-04-19
 - Added `SetActive` and `SetInactive` methods to `GameObjectExtensions` class.
 
