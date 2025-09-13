@@ -1,3 +1,6 @@
+## [1.0.20] - 2025-09-13
+- Added Quantize extension method for Vector3
+
 ## [1.0.19] - 2025-05-10
 - Added PropertyPathExtensions for use with Unity.Properties API
 
