@@ -1,9 +1,14 @@
-﻿#if ENABLED_UNITY_MATHEMATICS
+﻿using UnityEngine;
+#if ENABLED_UNITY_MATHEMATICS
 using Unity.Mathematics;
 #endif
 
 namespace UnityUtils {
     public static class MathfExtension {
+        public static float Remap(this float value, float from1, float to1, float from2, float to2) {
+            return Mathf.Lerp(from2, to2, Mathf.InverseLerp(from1, to1, value));
+        }
+        
         #region Min
 
 #if ENABLED_UNITY_MATHEMATICS

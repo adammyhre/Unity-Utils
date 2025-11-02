@@ -12,6 +12,7 @@ Welcome to the Unity Utility Library, a growing collection of handy extension me
 - **Helpers:** Static helper methods such as NonAlloc WaitForSeconds.
 - **Vector Math:** Vector math utilities such as RotateVectorOntoPlane.
 - **Singletons:** Generic Singletons for various use cases.
+- **Allocation Counter:** Track memory allocations in your code.
 
 ## Dependencies
 
@@ -33,7 +34,8 @@ Add the following line to the dependencies section of your project's manifest.js
 
 ## YouTube
 
-[**Extension Methods Video**](https://youtu.be/Nk49EUf7yyU)  
-[**Singleton Video**](https://youtu.be/LFOXge7Ak3E)
+- [**Extension Methods Video**](https://youtu.be/Nk49EUf7yyU)
+- [**Advanced Extension Methods Video**](https://youtu.be/AQueZlN4CRs)
+- [**Singleton Video**](https://youtu.be/LFOXge7Ak3E)
 
-You can also check out my [YouTube channel](https://www.youtube.com/@git-amend?sub_confirmation=1) for more Unity content.
+You can also check out our [YouTube channel](https://www.youtube.com/@git-amend?sub_confirmation=1) for more Unity content.

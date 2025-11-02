@@ -1,3 +1,7 @@
+## [1.0.21] - 2025-11-02
+- Added Span, Delegate, UnityEvent and more new extension methods
+- Added Allocation Counter
+
 ## [1.0.20] - 2025-09-13
 - Added Quantize extension method for Vector3
 
